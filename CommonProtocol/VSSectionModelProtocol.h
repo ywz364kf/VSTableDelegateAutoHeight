@@ -8,6 +8,7 @@
 
 #ifndef VSSectionModelProtocol_h
 #define VSSectionModelProtocol_h
+#import <UIKit/UIKit.h>
 
 @protocol VSCellModelProtocol;
 @protocol VSViewModelProtocol;

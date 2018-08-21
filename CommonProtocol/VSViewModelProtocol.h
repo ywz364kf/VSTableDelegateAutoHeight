@@ -8,6 +8,7 @@
 
 #ifndef VSViewModelProtocol_h
 #define VSViewModelProtocol_h
+#import <UIKit/UIKit.h>
 
 @protocol VSCellModelProtocol;
 @protocol VSSectionModelProtocol;
@@ -26,9 +27,8 @@
 
 @optional
 - (NSString *)title;
-
-- (void)enumerateCellClassNamesUsingBlock:(void (^)(NSString *cellClassName))block;
-
+- (NSArray *)cellClassNameArray;
+- (void)enumerateCellClassNameswithTableView:(UITableView *)tableView;
 @end
 
 #endif /* VSViewModelProtocol_h */

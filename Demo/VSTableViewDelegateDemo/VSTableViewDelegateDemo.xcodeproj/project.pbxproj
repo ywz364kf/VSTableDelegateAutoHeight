@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FCED832212BD9C600EDD3AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED831212BD9C600EDD3AE /* AppDelegate.m */; };
+		3FCED835212BD9C600EDD3AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED834212BD9C600EDD3AE /* ViewController.m */; };
+		3FCED838212BD9C600EDD3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCED836212BD9C600EDD3AE /* Main.storyboard */; };
+		3FCED83A212BD9C700EDD3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCED839212BD9C700EDD3AE /* Assets.xcassets */; };
+		3FCED83D212BD9C700EDD3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCED83B212BD9C700EDD3AE /* LaunchScreen.storyboard */; };
+		3FCED840212BD9C700EDD3AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED83F212BD9C700EDD3AE /* main.m */; };
+		3FCED85A212BD9E500EDD3AE /* VSTableDelegateAutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED847212BD9E400EDD3AE /* VSTableDelegateAutoHeight.m */; };
+		3FCED85C212BD9E500EDD3AE /* VSBaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED852212BD9E500EDD3AE /* VSBaseSectionModel.m */; };
+		3FCED85D212BD9E500EDD3AE /* VSBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED853212BD9E500EDD3AE /* VSBaseViewModel.m */; };
+		3FCED85E212BD9E500EDD3AE /* VSBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED854212BD9E500EDD3AE /* VSBaseCellModel.m */; };
+		3FCED85F212BD9E500EDD3AE /* VSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED859212BD9E500EDD3AE /* VSBaseTableViewCell.m */; };
+		3FCED868212BDCC700EDD3AE /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED867212BDCC700EDD3AE /* ViewModel.m */; };
+		3FCED86C212BDCE900EDD3AE /* ServerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED86B212BDCE900EDD3AE /* ServerHandler.m */; };
+		3FCED86F212BDCFE00EDD3AE /* EventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED86E212BDCFE00EDD3AE /* EventHandler.m */; };
+		3FCED873212BDE1B00EDD3AE /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED871212BDE1B00EDD3AE /* HistoryTableViewCell.m */; };
+		3FCED874212BDE1B00EDD3AE /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCED872212BDE1B00EDD3AE /* HistoryTableViewCell.xib */; };
+		3FCED878212BDE2A00EDD3AE /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED876212BDE2A00EDD3AE /* OrderTableViewCell.m */; };
+		3FCED879212BDE2A00EDD3AE /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCED877212BDE2A00EDD3AE /* OrderTableViewCell.xib */; };
+		3FCED87D212BDE3700EDD3AE /* GoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED87B212BDE3700EDD3AE /* GoodTableViewCell.m */; };
+		3FCED87E212BDE3700EDD3AE /* GoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCED87C212BDE3700EDD3AE /* GoodTableViewCell.xib */; };
+		3FCED881212BE0F400EDD3AE /* HistorySectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED880212BE0F400EDD3AE /* HistorySectionModel.m */; };
+		3FCED884212BE10800EDD3AE /* HistoryCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED883212BE10800EDD3AE /* HistoryCellModel.m */; };
+		3FCED887212BE11600EDD3AE /* OrderCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED886212BE11600EDD3AE /* OrderCellModel.m */; };
+		3FCED88A212BE12A00EDD3AE /* OrderSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED889212BE12A00EDD3AE /* OrderSectionModel.m */; };
+		3FCED88D212BE13700EDD3AE /* GoodSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED88C212BE13700EDD3AE /* GoodSectionModel.m */; };
+		3FCED890212BE14900EDD3AE /* GoodCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCED88F212BE14900EDD3AE /* GoodCellModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FCED82D212BD9C600EDD3AE /* VSTableViewDelegateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSTableViewDelegateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCED830212BD9C600EDD3AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FCED831212BD9C600EDD3AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FCED833212BD9C600EDD3AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FCED834212BD9C600EDD3AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FCED837212BD9C600EDD3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FCED839212BD9C700EDD3AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FCED83C212BD9C700EDD3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FCED83E212BD9C700EDD3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCED83F212BD9C700EDD3AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FCED847212BD9E400EDD3AE /* VSTableDelegateAutoHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTableDelegateAutoHeight.m; sourceTree = "<group>"; };
+		3FCED849212BD9E400EDD3AE /* VSTableDelegateAutoHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTableDelegateAutoHeight.h; sourceTree = "<group>"; };
+		3FCED84C212BD9E500EDD3AE /* VSViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSViewModelProtocol.h; sourceTree = "<group>"; };
+		3FCED84D212BD9E500EDD3AE /* VSSectionModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSectionModelProtocol.h; sourceTree = "<group>"; };
+		3FCED84E212BD9E500EDD3AE /* VSCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSCellProtocol.h; sourceTree = "<group>"; };
+		3FCED84F212BD9E500EDD3AE /* VSCellModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSCellModelProtocol.h; sourceTree = "<group>"; };
+		3FCED851212BD9E500EDD3AE /* VSBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBaseCellModel.h; sourceTree = "<group>"; };
+		3FCED852212BD9E500EDD3AE /* VSBaseSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBaseSectionModel.m; sourceTree = "<group>"; };
+		3FCED853212BD9E500EDD3AE /* VSBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBaseViewModel.m; sourceTree = "<group>"; };
+		3FCED854212BD9E500EDD3AE /* VSBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBaseCellModel.m; sourceTree = "<group>"; };
+		3FCED855212BD9E500EDD3AE /* VSBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBaseViewModel.h; sourceTree = "<group>"; };
+		3FCED856212BD9E500EDD3AE /* VSBaseSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBaseSectionModel.h; sourceTree = "<group>"; };
+		3FCED858212BD9E500EDD3AE /* VSBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSBaseTableViewCell.h; sourceTree = "<group>"; };
+		3FCED859212BD9E500EDD3AE /* VSBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSBaseTableViewCell.m; sourceTree = "<group>"; };
+		3FCED866212BDCC700EDD3AE /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		3FCED867212BDCC700EDD3AE /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		3FCED86A212BDCE900EDD3AE /* ServerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerHandler.h; sourceTree = "<group>"; };
+		3FCED86B212BDCE900EDD3AE /* ServerHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerHandler.m; sourceTree = "<group>"; };
+		3FCED86D212BDCFE00EDD3AE /* EventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventHandler.h; sourceTree = "<group>"; };
+		3FCED86E212BDCFE00EDD3AE /* EventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventHandler.m; sourceTree = "<group>"; };
+		3FCED870212BDE1B00EDD3AE /* HistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		3FCED871212BDE1B00EDD3AE /* HistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		3FCED872212BDE1B00EDD3AE /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		3FCED875212BDE2A00EDD3AE /* OrderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
+		3FCED876212BDE2A00EDD3AE /* OrderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
+		3FCED877212BDE2A00EDD3AE /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		3FCED87A212BDE3700EDD3AE /* GoodTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodTableViewCell.h; sourceTree = "<group>"; };
+		3FCED87B212BDE3700EDD3AE /* GoodTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodTableViewCell.m; sourceTree = "<group>"; };
+		3FCED87C212BDE3700EDD3AE /* GoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodTableViewCell.xib; sourceTree = "<group>"; };
+		3FCED87F212BE0F400EDD3AE /* HistorySectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistorySectionModel.h; sourceTree = "<group>"; };
+		3FCED880212BE0F400EDD3AE /* HistorySectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistorySectionModel.m; sourceTree = "<group>"; };
+		3FCED882212BE10800EDD3AE /* HistoryCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryCellModel.h; sourceTree = "<group>"; };
+		3FCED883212BE10800EDD3AE /* HistoryCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryCellModel.m; sourceTree = "<group>"; };
+		3FCED885212BE11600EDD3AE /* OrderCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderCellModel.h; sourceTree = "<group>"; };
+		3FCED886212BE11600EDD3AE /* OrderCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderCellModel.m; sourceTree = "<group>"; };
+		3FCED888212BE12A00EDD3AE /* OrderSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderSectionModel.h; sourceTree = "<group>"; };
+		3FCED889212BE12A00EDD3AE /* OrderSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderSectionModel.m; sourceTree = "<group>"; };
+		3FCED88B212BE13700EDD3AE /* GoodSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodSectionModel.h; sourceTree = "<group>"; };
+		3FCED88C212BE13700EDD3AE /* GoodSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodSectionModel.m; sourceTree = "<group>"; };
+		3FCED88E212BE14900EDD3AE /* GoodCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodCellModel.h; sourceTree = "<group>"; };
+		3FCED88F212BE14900EDD3AE /* GoodCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodCellModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FCED82A212BD9C600EDD3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FCED824212BD9C500EDD3AE = {
+			isa = PBXGroup;
+			children = (
+				3FCED857212BD9E500EDD3AE /* BaseCell */,
+				3FCED850212BD9E500EDD3AE /* BaseModel */,
+				3FCED84B212BD9E500EDD3AE /* CommonProtocol */,
+				3FCED846212BD9E400EDD3AE /* Delegate */,
+				3FCED82F212BD9C600EDD3AE /* VSTableViewDelegateDemo */,
+				3FCED82E212BD9C600EDD3AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FCED82E212BD9C600EDD3AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED82D212BD9C600EDD3AE /* VSTableViewDelegateDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FCED82F212BD9C600EDD3AE /* VSTableViewDelegateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED869212BDCCD00EDD3AE /* Handler */,
+				3FCED865212BDCAF00EDD3AE /* ViewModel */,
+				3FCED860212BDB9700EDD3AE /* View */,
+				3FCED830212BD9C600EDD3AE /* AppDelegate.h */,
+				3FCED831212BD9C600EDD3AE /* AppDelegate.m */,
+				3FCED833212BD9C600EDD3AE /* ViewController.h */,
+				3FCED834212BD9C600EDD3AE /* ViewController.m */,
+				3FCED836212BD9C600EDD3AE /* Main.storyboard */,
+				3FCED839212BD9C700EDD3AE /* Assets.xcassets */,
+				3FCED83B212BD9C700EDD3AE /* LaunchScreen.storyboard */,
+				3FCED83E212BD9C700EDD3AE /* Info.plist */,
+				3FCED83F212BD9C700EDD3AE /* main.m */,
+			);
+			path = VSTableViewDelegateDemo;
+			sourceTree = "<group>";
+		};
+		3FCED846212BD9E400EDD3AE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED849212BD9E400EDD3AE /* VSTableDelegateAutoHeight.h */,
+				3FCED847212BD9E400EDD3AE /* VSTableDelegateAutoHeight.m */,
+			);
+			name = Delegate;
+			path = ../../Delegate;
+			sourceTree = "<group>";
+		};
+		3FCED84B212BD9E500EDD3AE /* CommonProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED84C212BD9E500EDD3AE /* VSViewModelProtocol.h */,
+				3FCED84D212BD9E500EDD3AE /* VSSectionModelProtocol.h */,
+				3FCED84E212BD9E500EDD3AE /* VSCellProtocol.h */,
+				3FCED84F212BD9E500EDD3AE /* VSCellModelProtocol.h */,
+			);
+			name = CommonProtocol;
+			path = ../../CommonProtocol;
+			sourceTree = "<group>";
+		};
+		3FCED850212BD9E500EDD3AE /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED851212BD9E500EDD3AE /* VSBaseCellModel.h */,
+				3FCED854212BD9E500EDD3AE /* VSBaseCellModel.m */,
+				3FCED855212BD9E500EDD3AE /* VSBaseViewModel.h */,
+				3FCED853212BD9E500EDD3AE /* VSBaseViewModel.m */,
+				3FCED856212BD9E500EDD3AE /* VSBaseSectionModel.h */,
+				3FCED852212BD9E500EDD3AE /* VSBaseSectionModel.m */,
+			);
+			name = BaseModel;
+			path = ../../BaseModel;
+			sourceTree = "<group>";
+		};
+		3FCED857212BD9E500EDD3AE /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED858212BD9E500EDD3AE /* VSBaseTableViewCell.h */,
+				3FCED859212BD9E500EDD3AE /* VSBaseTableViewCell.m */,
+			);
+			name = BaseCell;
+			path = ../../BaseCell;
+			sourceTree = "<group>";
+		};
+		3FCED860212BDB9700EDD3AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED864212BDBC700EDD3AE /* HistoryCell */,
+				3FCED863212BDBB700EDD3AE /* OrderCell */,
+				3FCED861212BDBA100EDD3AE /* GoodCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FCED861212BDBA100EDD3AE /* GoodCell */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED87A212BDE3700EDD3AE /* GoodTableViewCell.h */,
+				3FCED87B212BDE3700EDD3AE /* GoodTableViewCell.m */,
+				3FCED87C212BDE3700EDD3AE /* GoodTableViewCell.xib */,
+				3FCED88B212BE13700EDD3AE /* GoodSectionModel.h */,
+				3FCED88C212BE13700EDD3AE /* GoodSectionModel.m */,
+				3FCED88E212BE14900EDD3AE /* GoodCellModel.h */,
+				3FCED88F212BE14900EDD3AE /* GoodCellModel.m */,
+			);
+			path = GoodCell;
+			sourceTree = "<group>";
+		};
+		3FCED863212BDBB700EDD3AE /* OrderCell */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED875212BDE2A00EDD3AE /* OrderTableViewCell.h */,
+				3FCED876212BDE2A00EDD3AE /* OrderTableViewCell.m */,
+				3FCED877212BDE2A00EDD3AE /* OrderTableViewCell.xib */,
+				3FCED885212BE11600EDD3AE /* OrderCellModel.h */,
+				3FCED886212BE11600EDD3AE /* OrderCellModel.m */,
+				3FCED888212BE12A00EDD3AE /* OrderSectionModel.h */,
+				3FCED889212BE12A00EDD3AE /* OrderSectionModel.m */,
+			);
+			path = OrderCell;
+			sourceTree = "<group>";
+		};
+		3FCED864212BDBC700EDD3AE /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED870212BDE1B00EDD3AE /* HistoryTableViewCell.h */,
+				3FCED871212BDE1B00EDD3AE /* HistoryTableViewCell.m */,
+				3FCED872212BDE1B00EDD3AE /* HistoryTableViewCell.xib */,
+				3FCED87F212BE0F400EDD3AE /* HistorySectionModel.h */,
+				3FCED880212BE0F400EDD3AE /* HistorySectionModel.m */,
+				3FCED882212BE10800EDD3AE /* HistoryCellModel.h */,
+				3FCED883212BE10800EDD3AE /* HistoryCellModel.m */,
+			);
+			path = HistoryCell;
+			sourceTree = "<group>";
+		};
+		3FCED865212BDCAF00EDD3AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED866212BDCC700EDD3AE /* ViewModel.h */,
+				3FCED867212BDCC700EDD3AE /* ViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3FCED869212BDCCD00EDD3AE /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				3FCED86A212BDCE900EDD3AE /* ServerHandler.h */,
+				3FCED86B212BDCE900EDD3AE /* ServerHandler.m */,
+				3FCED86D212BDCFE00EDD3AE /* EventHandler.h */,
+				3FCED86E212BDCFE00EDD3AE /* EventHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FCED82C212BD9C600EDD3AE /* VSTableViewDelegateDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCED843212BD9C700EDD3AE /* Build configuration list for PBXNativeTarget "VSTableViewDelegateDemo" */;
+			buildPhases = (
+				3FCED829212BD9C600EDD3AE /* Sources */,
+				3FCED82A212BD9C600EDD3AE /* Frameworks */,
+				3FCED82B212BD9C600EDD3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VSTableViewDelegateDemo;
+			productName = VSTableViewDelegateDemo;
+			productReference = 3FCED82D212BD9C600EDD3AE /* VSTableViewDelegateDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FCED825212BD9C500EDD3AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = leo;
+				TargetAttributes = {
+					3FCED82C212BD9C600EDD3AE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3FCED828212BD9C500EDD3AE /* Build configuration list for PBXProject "VSTableViewDelegateDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FCED824212BD9C500EDD3AE;
+			productRefGroup = 3FCED82E212BD9C600EDD3AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FCED82C212BD9C600EDD3AE /* VSTableViewDelegateDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FCED82B212BD9C600EDD3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCED83D212BD9C700EDD3AE /* LaunchScreen.storyboard in Resources */,
+				3FCED879212BDE2A00EDD3AE /* OrderTableViewCell.xib in Resources */,
+				3FCED87E212BDE3700EDD3AE /* GoodTableViewCell.xib in Resources */,
+				3FCED83A212BD9C700EDD3AE /* Assets.xcassets in Resources */,
+				3FCED874212BDE1B00EDD3AE /* HistoryTableViewCell.xib in Resources */,
+				3FCED838212BD9C600EDD3AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FCED829212BD9C600EDD3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCED884212BE10800EDD3AE /* HistoryCellModel.m in Sources */,
+				3FCED85D212BD9E500EDD3AE /* VSBaseViewModel.m in Sources */,
+				3FCED85E212BD9E500EDD3AE /* VSBaseCellModel.m in Sources */,
+				3FCED878212BDE2A00EDD3AE /* OrderTableViewCell.m in Sources */,
+				3FCED881212BE0F400EDD3AE /* HistorySectionModel.m in Sources */,
+				3FCED873212BDE1B00EDD3AE /* HistoryTableViewCell.m in Sources */,
+				3FCED85A212BD9E500EDD3AE /* VSTableDelegateAutoHeight.m in Sources */,
+				3FCED835212BD9C600EDD3AE /* ViewController.m in Sources */,
+				3FCED890212BE14900EDD3AE /* GoodCellModel.m in Sources */,
+				3FCED840212BD9C700EDD3AE /* main.m in Sources */,
+				3FCED887212BE11600EDD3AE /* OrderCellModel.m in Sources */,
+				3FCED85C212BD9E500EDD3AE /* VSBaseSectionModel.m in Sources */,
+				3FCED868212BDCC700EDD3AE /* ViewModel.m in Sources */,
+				3FCED88A212BE12A00EDD3AE /* OrderSectionModel.m in Sources */,
+				3FCED85F212BD9E500EDD3AE /* VSBaseTableViewCell.m in Sources */,
+				3FCED87D212BDE3700EDD3AE /* GoodTableViewCell.m in Sources */,
+				3FCED88D212BE13700EDD3AE /* GoodSectionModel.m in Sources */,
+				3FCED832212BD9C600EDD3AE /* AppDelegate.m in Sources */,
+				3FCED86C212BDCE900EDD3AE /* ServerHandler.m in Sources */,
+				3FCED86F212BDCFE00EDD3AE /* EventHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FCED836212BD9C600EDD3AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCED837212BD9C600EDD3AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FCED83B212BD9C700EDD3AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCED83C212BD9C700EDD3AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FCED841212BD9C700EDD3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FCED842212BD9C700EDD3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FCED844212BD9C700EDD3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VSTableViewDelegateDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.VSTableViewDelegateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FCED845212BD9C700EDD3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VSTableViewDelegateDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.VSTableViewDelegateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FCED828212BD9C500EDD3AE /* Build configuration list for PBXProject "VSTableViewDelegateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCED841212BD9C700EDD3AE /* Debug */,
+				3FCED842212BD9C700EDD3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCED843212BD9C700EDD3AE /* Build configuration list for PBXNativeTarget "VSTableViewDelegateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCED844212BD9C700EDD3AE /* Debug */,
+				3FCED845212BD9C700EDD3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FCED825212BD9C500EDD3AE /* Project object */;
+}

@@ -9,6 +9,8 @@
 #import "VSBaseSectionModel.h"
 #import "VSCellModelProtocol.h"
 #import "VSViewModelProtocol.h"
+#import <UIKit/UIKit.h>
+
 @implementation VSBaseSectionModel
 
 @synthesize cellHeightArray = _cellHeightArray;

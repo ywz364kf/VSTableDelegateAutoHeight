@@ -60,4 +60,19 @@
     return @"";
 }
 
+
+- (void)enumerateCellClassNameswithTableView:(UITableView *)tableView {
+    NSArray<NSString *> *cellClassNameArray = [self cellClassNameArray];
+    for (NSString *cellClassName in cellClassNameArray) {
+        if (cellClassName.length) {
+            NSString *nibPath = [[NSBundle mainBundle] pathForResource:cellClassName ofType:@"nib"];
+            if (nibPath.length) {
+                [tableView registerNib:[UINib nibWithNibName:cellClassName bundle:nil] forCellReuseIdentifier:cellClassName];
+            }else{
+                [tableView registerClass:NSClassFromString(cellClassName) forCellReuseIdentifier:cellClassName];
+            }
+        }
+    }
+}
+
 @end

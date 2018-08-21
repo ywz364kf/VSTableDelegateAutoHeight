@@ -7,18 +7,15 @@
 //
 
 #import "VSTableDelegateAutoHeight.h"
-#import "VSTableDelegate.h"
 #import "VSBaseViewModel.h"
 #import "VSCellProtocol.h"
 #import "VSSectionModelProtocol.h"
 #import "VSCellModelProtocol.h"
 #import "VSViewModelProtocol.h"
-#import "VSRefreshView.h"
 
 @interface VSTableDelegateAutoHeight ()
 @property (nonatomic, strong) id<VSViewModelProtocol> viewModel;
 @property (nonatomic, strong) NSMutableDictionary *templateCellsByIdentifiers;
-@property (nonatomic, assign) VSRefreshView *refreshView;
 
 @end
 
@@ -34,10 +31,6 @@
 
 - (void)setViewModel:(id<VSViewModelProtocol>)viewModel {
     _viewModel = viewModel;
-}
-
-- (void)setHeadReFreshView:(VSRefreshView *)refreshView {
-    _refreshView = refreshView;
 }
 
 - (NSMutableDictionary *)templateCellsByIdentifiers {
@@ -177,7 +170,7 @@
 
 - (CGFloat)systemFittingHeightForConfiguratedCell:(UITableViewCell *)cell tableView:(UITableView *)tableView{
     CGFloat contentViewWidth = CGRectGetWidth(tableView.frame);
-    
+    // 这部分的高度计算来做UITableView+FDTemplateLayoutCell的框架
     if (cell.accessoryView) {
         contentViewWidth -= 16 + CGRectGetWidth(cell.accessoryView.frame);
     } else {
@@ -247,22 +240,4 @@
     return fittingHeight;
 }
 
-#pragma mark - UIScrollViewDelegate
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    if (_refreshView) {
-        [_refreshView viewWillBeginDragging:scrollView];
-    }
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (_refreshView) {
-        [_refreshView viewDidScroll:scrollView];
-    }
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    if (_refreshView) {
-        [_refreshView viewDidEndDragging:scrollView];
-    }
-}
 @end

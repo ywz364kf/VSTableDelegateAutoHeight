@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @protocol VSViewModelProtocol;
-@class VSRefreshView;
-
 @interface VSTableDelegateAutoHeight : NSObject<UITableViewDelegate,
                                                 UITableViewDataSource>
 - (instancetype)initWithViewModel:(id<VSViewModelProtocol>)viewModel;
 - (void)setViewModel:(id<VSViewModelProtocol>)viewModel;
-- (void)setHeadReFreshView:(VSRefreshView *)refreshView;
 
 @end

@@ -8,6 +8,7 @@
 
 #ifndef VSCellModelProtocol_h
 #define VSCellModelProtocol_h
+#import <UIKit/UIKit.h>
 
 @protocol VSCellModelProtocol <NSObject>
 @optional

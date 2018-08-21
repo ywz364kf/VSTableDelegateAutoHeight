@@ -51,10 +51,6 @@
     
 }
 
-- (UIViewController *)parentViewController {
-    return [[VSRouteManager defaultManager] topViewController];
-}
-
 #pragma mark - <VSOrderCellProtocol>
 
 - (void)tableView:(UITableView *)tableView configureCellModel:(id<VSCellModelProtocol>)cellModel forRowAtIndexPath:(NSIndexPath *)indexPath viewModel:(id<VSViewModelProtocol>)viewModel sectionModel:(id)sectionModel

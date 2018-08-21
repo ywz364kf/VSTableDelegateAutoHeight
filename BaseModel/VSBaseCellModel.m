@@ -7,7 +7,7 @@
 //
 
 #import "VSBaseCellModel.h"
-
+#import <UIKit/UIKit.h>
 @implementation VSBaseCellModel
 @synthesize tableView = _tableView;
 @synthesize indexPath = _indexPath;

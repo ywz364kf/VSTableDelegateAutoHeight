@@ -15,6 +15,4 @@
 
 - (void)configureCellModel;
 
-- (UIViewController *)parentViewController;
-
 @end
